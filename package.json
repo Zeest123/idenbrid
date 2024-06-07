@@ -1,0 +1,51 @@
+{
+  "name": "buggaz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debug": "DEBUG=app:startup nodemon app.js",
+    "server": "concurrently \"npm run dev\" \"npm run client\"",
+    "client": "cd client && yarn start"
+  },
+  "engines": {
+    "node": ">16.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "base64url": "^3.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-async-handler": "^1.2.0",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.2",
+    "file-type": "^18.5.0",
+    "helmet": "^6.1.5",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "sequelize": "^6.19.2",
+    "sharp": "^0.32.1",
+    "title-case": "^3.0.3",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "winston-mysql": "^1.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.16"
+  }
+}
